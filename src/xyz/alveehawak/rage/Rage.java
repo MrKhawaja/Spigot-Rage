@@ -10,7 +10,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
-import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
 public class Rage extends JavaPlugin {
