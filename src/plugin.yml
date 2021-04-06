@@ -1,0 +1,28 @@
+name: PixeledgeRage
+version: 1.0
+author: AlveeYT
+main: xyz.alveehawak.rage.Rage
+api-version: 1.8
+commands:
+  rage:
+    description: Rage Command
+    permission: pixel.rage
+    usage: /rage
+  fury:
+    description: Fury Command
+    permission: pixel.fury
+    usage: /fury
+  regen:
+    description: Regen Command
+    permission: pixel.regen
+    usage: /regen
+permissions:
+  pixel.rage:
+    description: Rage Command
+    default: op
+  pixel.fury:
+    description: Fury Command
+    default: op
+  pixel.regen:
+    description: Regen Command
+    default: op
