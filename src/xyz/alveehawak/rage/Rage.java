@@ -41,7 +41,7 @@ public class Rage extends JavaPlugin {
                     ((Player) sender).addPotionEffect(new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 900, 2));
                     ((Player) sender).addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 900, 2));
                     ((Player) sender).addPotionEffect(new PotionEffect(PotionEffectType.FIRE_RESISTANCE, 900, 0));
-                    p.sendMessage(ChatColor.translateAlternateColorCodes('&', " &cRage &a has been used!"));
+                    p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7&l[&f&lPixelEffects&7&l]  &cRage &a has been used!"));
                     rageCooldownManager.setCooldown(p.getUniqueId(), System.currentTimeMillis());
                 }else{
                     Long timeleft = CooldownManager.DEFAULT_COOLDOWN - TimeUnit.MILLISECONDS.toSeconds(timeLeft);
@@ -56,7 +56,7 @@ public class Rage extends JavaPlugin {
                     ((Player) sender).addPotionEffect(new PotionEffect(PotionEffectType.FIRE_RESISTANCE, 900, 0));
                     ((Player) sender).addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 900, 3));
                     ((Player) sender).addPotionEffect(new PotionEffect(PotionEffectType.FAST_DIGGING, 900, 2));
-                    p.sendMessage(ChatColor.translateAlternateColorCodes('&', " &6Fury &ahas been used!"));
+                    p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7&l[&f&lPixelEffects&7&l]  &6Fury &ahas been used!"));
                     furyCooldownManager.setCooldown(p.getUniqueId(), System.currentTimeMillis());
                 }else{
                     Long timeleft = CooldownManager.DEFAULT_COOLDOWN - TimeUnit.MILLISECONDS.toSeconds(timeLeft);
@@ -68,7 +68,7 @@ public class Rage extends JavaPlugin {
                 if(TimeUnit.MILLISECONDS.toSeconds(timeLeft) >= CooldownManager.DEFAULT_COOLDOWN){
                     ((Player) sender).addPotionEffect(new PotionEffect(PotionEffectType.REGENERATION, 600, 3));
                     ((Player) sender).addPotionEffect(new PotionEffect(PotionEffectType.HEALTH_BOOST, 600, 3));
-                    p.sendMessage(ChatColor.translateAlternateColorCodes('&', " &dRegen &ahas been used!"));
+                    p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7&l[&f&lPixelEffects&7&l]  &dRegen &ahas been used!"));
                     regenCooldownManager.setCooldown(p.getUniqueId(), System.currentTimeMillis());
                 }else{
                     Long timeleft = CooldownManager.DEFAULT_COOLDOWN - TimeUnit.MILLISECONDS.toSeconds(timeLeft);
