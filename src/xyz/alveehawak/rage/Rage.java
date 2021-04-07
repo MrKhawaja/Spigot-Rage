@@ -23,7 +23,7 @@ public class Rage extends JavaPlugin {
     public void onEnable() {
         Bukkit.getConsoleSender().sendMessage(ChatColor.GREEN+"EEEEEE primeedge er RAGE plugin on hoise");
         plugin = this;
-
+        getServer().getPluginManager().registerEvents(new MobDrops(), this);
     }
 
     private final CooldownManager rageCooldownManager = new CooldownManager();
